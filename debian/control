@@ -1,0 +1,18 @@
+Source: mpclib3
+Section: unknown
+Priority: optional
+Maintainer: Jackson Hansen <madjack971@bsdmail.com>
+Build-Depends: debhelper-compat (= 13), dh-autoreconf
+Standards-Version: 4.5.1
+Homepage: http://www.multiprecision.org/mpc/
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/maddjack2020/mpclib3.git
+Vcs-Browser: https://github.com/maddjack2020/mpclib3
+
+Package: mpclib3
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: auto-generated package by debmake
+ The MPC package contains a library for the arithmetic of complex numbers with
+ arbitrarily high precision and correct rounding of the result.

@@ -1,0 +1,1420 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mpclib3
+Upstream-Contact: <preferred name and address to reach the upstream project>
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     Makefile.am
+           doc/Makefile.am
+           src/Makefile.am
+           src/abs.c
+           src/acos.c
+           src/acosh.c
+           src/add.c
+           src/add_fr.c
+           src/add_si.c
+           src/add_ui.c
+           src/agm.c
+           src/arg.c
+           src/asin.c
+           src/asinh.c
+           src/atan.c
+           src/atanh.c
+           src/balls.c
+           src/clear.c
+           src/cmp.c
+           src/cmp_abs.c
+           src/cmp_si_si.c
+           src/conj.c
+           src/cos.c
+           src/cosh.c
+           src/div.c
+           src/div_2si.c
+           src/div_2ui.c
+           src/div_fr.c
+           src/div_ui.c
+           src/dot.c
+           src/eta.c
+           src/exp.c
+           src/fma.c
+           src/fr_div.c
+           src/fr_sub.c
+           src/get_prec.c
+           src/get_prec2.c
+           src/get_version.c
+           src/get_x.c
+           src/imag.c
+           src/init2.c
+           src/init3.c
+           src/inp_str.c
+           src/log.c
+           src/logging.c
+           src/mem.c
+           src/mpc-impl.h
+           src/mpc-log.h
+           src/mpc.h
+           src/mul_2si.c
+           src/mul_2ui.c
+           src/mul_fr.c
+           src/mul_i.c
+           src/mul_si.c
+           src/mul_ui.c
+           src/neg.c
+           src/norm.c
+           src/out_str.c
+           src/pow.c
+           src/pow_d.c
+           src/pow_fr.c
+           src/pow_ld.c
+           src/pow_si.c
+           src/pow_ui.c
+           src/pow_z.c
+           src/proj.c
+           src/radius.c
+           src/real.c
+           src/rootofunity.c
+           src/set.c
+           src/set_prec.c
+           src/set_str.c
+           src/set_x.c
+           src/set_x_x.c
+           src/sin.c
+           src/sin_cos.c
+           src/sinh.c
+           src/sqr.c
+           src/sqrt.c
+           src/strtoc.c
+           src/sub.c
+           src/sub_fr.c
+           src/sub_ui.c
+           src/sum.c
+           src/swap.c
+           src/tan.c
+           src/tanh.c
+           src/uceil_log2.c
+           src/ui_div.c
+           src/ui_ui_sub.c
+           src/urandom.c
+           tests/Makefile.am
+           tests/check_data.c
+           tests/clear_parameters.c
+           tests/close_datafile.c
+           tests/comparisons.c
+           tests/copy_parameter.c
+           tests/data_check.tpl
+           tests/double_rounding.c
+           tests/init_parameters.c
+           tests/mpc-tests.h
+           tests/mpfr_flags.c
+           tests/open_datafile.c
+           tests/print_parameter.c
+           tests/read_data.c
+           tests/read_description.c
+           tests/read_line.c
+           tests/rounding.c
+           tests/setprec_parameters.c
+           tests/tabs.c
+           tests/tacos.c
+           tests/tacosh.c
+           tests/tadd.c
+           tests/tadd_fr.c
+           tests/tadd_si.c
+           tests/tadd_ui.c
+           tests/tagm.c
+           tests/targ.c
+           tests/tasin.c
+           tests/tasinh.c
+           tests/tatan.c
+           tests/tatanh.c
+           tests/tballs.c
+           tests/tcmp_abs.c
+           tests/tconj.c
+           tests/tcos.c
+           tests/tcosh.c
+           tests/tdiv.c
+           tests/tdiv_2si.c
+           tests/tdiv_2ui.c
+           tests/tdiv_fr.c
+           tests/tdiv_ui.c
+           tests/tdot.c
+           tests/tdummy.c
+           tests/teta.c
+           tests/texceptions.c
+           tests/texp.c
+           tests/tfma.c
+           tests/tfr_div.c
+           tests/tfr_sub.c
+           tests/tgeneric.tpl
+           tests/tget_version.c
+           tests/timag.c
+           tests/tio_str.c
+           tests/tlog.c
+           tests/tlog10.c
+           tests/tmul.c
+           tests/tmul_2si.c
+           tests/tmul_2ui.c
+           tests/tmul_fr.c
+           tests/tmul_i.c
+           tests/tmul_si.c
+           tests/tmul_ui.c
+           tests/tneg.c
+           tests/tnorm.c
+           tests/tpl_gmp.c
+           tests/tpl_mpc.c
+           tests/tpl_mpfr.c
+           tests/tpl_native.c
+           tests/tpow.c
+           tests/tpow_d.c
+           tests/tpow_fr.c
+           tests/tpow_ld.c
+           tests/tpow_si.c
+           tests/tpow_ui.c
+           tests/tpow_z.c
+           tests/tprec.c
+           tests/tproj.c
+           tests/tradius.c
+           tests/treal.c
+           tests/treimref.c
+           tests/trootofunity.c
+           tests/tset.c
+           tests/tsin.c
+           tests/tsin_cos.c
+           tests/tsinh.c
+           tests/tsqr.c
+           tests/tsqrt.c
+           tests/tstrtoc.c
+           tests/tsub.c
+           tests/tsub_fr.c
+           tests/tsub_ui.c
+           tests/tsum.c
+           tests/tswap.c
+           tests/ttan.c
+           tests/ttanh.c
+           tests/tui_div.c
+           tests/tui_ui_sub.c
+           tools/Makefile.am
+           tools/bench/Makefile.am
+           tools/bench/mpcbench.c
+           tools/mpcheck/Makefile.am
+Copyright: 2002-2022 INRIA
+           2014 CNRS
+           2014 CNRS - INRIA
+License:   LGPL-3.0+
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ option) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     tests/acos.dsc
+           tests/acosh.dsc
+           tests/arg.dsc
+           tests/asin.dsc
+           tests/asinh.dsc
+           tests/atan.dsc
+           tests/atanh.dsc
+           tests/cos.dsc
+           tests/cosh.dsc
+           tests/div.dsc
+           tests/div_2si.dsc
+           tests/div_2ui.dsc
+           tests/div_fr.dat
+           tests/div_fr.dsc
+           tests/div_ui.dsc
+           tests/exp.dsc
+           tests/fr_div.dsc
+           tests/fr_sub.dat
+           tests/fr_sub.dsc
+           tests/log.dsc
+           tests/log10.dsc
+           tests/mul_2si.dsc
+           tests/mul_2ui.dsc
+           tests/mul_fr.dat
+           tests/mul_fr.dsc
+           tests/mul_i.dsc
+           tests/mul_si.dsc
+           tests/mul_ui.dsc
+           tests/neg.dsc
+           tests/pow_fr.dat
+           tests/proj.dsc
+           tests/rootofunity.dsc
+           tests/sin.dsc
+           tests/sin_cos.dsc
+           tests/sinh.dsc
+           tests/sub_fr.dat
+           tests/tan.dsc
+           tests/tanh.dsc
+           tests/ui_div.dsc
+           tests/ui_ui_sub.dsc
+Copyright: 2008-2022 INRIA
+License:   LGPL-3.0
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ o ption) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     tests/abs.dat
+           tests/acos.dat
+           tests/acosh.dat
+           tests/add.dat
+           tests/add_fr.dat
+           tests/arg.dat
+           tests/asin.dat
+           tests/asinh.dat
+           tests/atan.dat
+           tests/atanh.dat
+           tests/cmp_abs.dat
+           tests/conj.dat
+           tests/exp.dat
+           tests/fma.dat
+           tests/mul.dat
+           tests/neg.dat
+           tests/pow_si.dat
+           tests/pow_ui.dat
+           tests/proj.dat
+           tests/rootofunity.dat
+           tests/sin.dat
+           tests/sqr.dat
+           tests/sqrt.dat
+           tests/sub.dat
+Copyright: 2008-2022 INRIA
+           __NO_COPYRIGHT__ in: tests/acos.dat
+License:   LGPL-3.0
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ o ption) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ The line format respects the parameter order in function prototype as
+ follow:
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     tests/abs.dsc
+           tests/add.dsc
+           tests/add_fr.dsc
+           tests/add_si.dsc
+           tests/add_ui.dsc
+           tests/agm.dsc
+           tests/cmp_abs.dsc
+           tests/conj.dsc
+           tests/imag.dsc
+           tests/mul.dsc
+           tests/norm.dsc
+           tests/pow.dsc
+           tests/pow_d.dsc
+           tests/pow_fr.dsc
+           tests/pow_si.dsc
+           tests/pow_ui.dsc
+           tests/pow_z.dsc
+           tests/real.dsc
+           tests/sqr.dsc
+           tests/sqrt.dsc
+           tests/sub.dsc
+           tests/sub_fr.dsc
+           tests/sub_ui.dsc
+Copyright: 2008-2022 INRIA
+License:   LGPL-3.0
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ o ption) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ Description file of the function
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     Makefile.in
+           aclocal.m4
+           build-aux/ar-lib
+           build-aux/compile
+           build-aux/depcomp
+           build-aux/install-sh
+           build-aux/ltmain.sh
+           build-aux/mdate-sh
+           build-aux/missing
+           build-aux/test-driver
+           configure
+           doc/Makefile.in
+           m4/libtool.m4
+           m4/ltoptions.m4
+           m4/ltsugar.m4
+           m4/ltversion.m4
+           m4/lt~obsolete.m4
+           m4/valgrind-tests.m4
+           src/Makefile.in
+           tests/Makefile.in
+           tools/Makefile.in
+           tools/bench/Makefile.in
+           tools/mpcheck/Makefile.in
+Copyright: 1992-2022 Free Software Foundation, Inc.
+           1994 X Consortium
+License:   __AUTO_PERMISSIVE__
+ Autogenerated files with permissive licenses.
+
+Files:     AUTHORS
+           TODO
+           config.h.in
+           doc/stamp-vti
+           doc/version.texi
+           tests/random.c
+           tools/mpcheck/README
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     tools/mpcheck/mpcheck-double.c
+           tools/mpcheck/mpcheck-float.c
+           tools/mpcheck/mpcheck-float128.c
+           tools/mpcheck/mpcheck-longdouble.c
+Copyright: 2020 INRIA
+License:   LGPL-3.0+
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ option) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ the GNU libc provides the following functions (as of 2.31),
+ with 'f' suffix for the float/binary32 version, with no suffix
+ for the double/binary64 version, with 'l' suffix for the long double
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     tests/cos.dat
+           tests/sinh.dat
+           tests/tanh.dat
+Copyright: 2008-2010 INRIA
+License:   LGPL-3.0
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ o ption) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ For explanations on the file format, see sin.dat.
+ .
+ special values (following ISO C99 standard)
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     tests/inp_str.dat
+           tests/strtoc.dat
+Copyright: 2009 INRIA
+License:   LGPL-3.0
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ o ption) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ The format respects the parameter order in function prototype as follow:
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     build-aux/config.guess
+           build-aux/config.sub
+Copyright: 1992-2021 Free Software Foundation, Inc.
+License:   __NO_LICENSE__
+
+Files:     m4/ax_gcc_option.m4
+           m4/ax_gcc_version.m4
+Copyright: 2008 Bogdan Drozdowski <bogdandr@op.pl>
+           2008-2009 Francesco Salvestrini <salvestrini@users.sourceforge.net>
+License:   GPL-2.0+ with unknown exception *** check multiple exceptions ***
+ This program is free software; you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by the
+ Free Software Foundation; either version 2 of the License, or (at your
+ option) any later version.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+ Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program. If not, see <http://www.gnu.org/licenses/>.
+ .
+ As a special exception, the respective Autoconf Macro's copyright owner
+ gives unlimited permission to copy, distribute and modify the configure
+ scripts that are the output of Autoconf when processing the Macro. You
+ need not follow the terms of the GNU General Public License when using
+ or distributing such scripts, even though portions of the text of the
+ Macro appear in them. The GNU General Public License (GPL) does govern
+ all other use of the material that constitutes the Autoconf Macro.
+ .
+ This special exception to the GPL applies to versions of the Autoconf
+ Macro released by the Autoconf Archive. When you make and distribute a
+ modified version of the Autoconf Macro, you may extend this special
+ exception to the GPL to apply to your modified version as well.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ Version 2 can be found in `/usr/share/common-licenses/GPL-2'.
+
+Files:     tests/agm.dat
+Copyright: 2022 INRIA
+License:   LGPL-3.0
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ o ption) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ The line format respects the parameter order in the function prototype as
+ follows:
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     tests/cosh.dat
+Copyright: 2008-2010 INRIA
+License:   LGPL-3.0
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ o ption) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ See file sin.dat for the format description.
+ .
+ Special values, following ISO C99 standard, Annex G,
+ more precisely Section G.6.2.4 "The ccosh functions".
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     tests/tan.dat
+Copyright: 2008-2011 INRIA
+License:   LGPL-3.0
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ o ption) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ See file sin.dat for the format description.
+ .
+ Special values, following ISO C99 standard, Annex G,
+ more precisely Section G.6.2.6 "The ctanh functions"
+ since G.6 defines ctan(z) as -i * ctanh(i*z)
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     tests/norm.dat
+Copyright: 2008-2011 INRIA
+License:   LGPL-3.0
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ o ption) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ For explanations on the file format, see abs.dat.
+ .
+ special values
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     tests/pow.dat
+Copyright: 2009-2012 INRIA
+License:   LGPL-3.0
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ o ption) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ For explanations on the file format, see add.dat.
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     tests/fr_div.dat
+Copyright: 2008-2009 INRIA
+License:   LGPL-3.0
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ o ption) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ For explanations on the file format, see add.dat, and take into
+ account the necessary modifications for one real argument.
+ .
+ special values
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     tests/div.dat
+Copyright: 2008-2012 INRIA
+License:   LGPL-3.0
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ o ption) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ For explanations on the file format, see add.dat.
+ .
+ special values
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     tests/log10.dat
+Copyright: 2012 INRIA
+License:   LGPL-3.0
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ o ption) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ See file sin.dat for the format description.
+ .
+ Special values, following ISO C99 standard, Annex G,
+ more precisely Section 7.26 "Future library directions"
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     doc/mpc.texi
+Copyright: __NO_COPYRIGHT__ in: doc/mpc.texi
+License:   GFDL-1.3+
+ Permission is granted to copy, distribute and/or modify this document
+ under the terms of the GNU Free Documentation License, Version 1.3 or
+ any later version published by the Free Software Foundation; with no
+ Invariant Sections. A copy of the license is included in the section
+ entitled ``GNU Free Documentation License.''
+ .
+ On Debian systems, the complete text of the GNU Free Documentation License
+ Version 1.3 can be found in `/usr/share/common-licenses/GFDL-1.3'.
+
+Files:     src/mul.c
+Copyright: 2002-2022 INRIA
+License:   LGPL-3.0+
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ he terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ option) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     m4/mpc.m4
+Copyright: 2008-2018 INRIA
+License:   LGPL-3.0+
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ option) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ SYNOPSIS
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     tests/fma.dsc
+Copyright: 2012 INRIA
+License:   LGPL-3.0+
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ option) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ Description file of the function
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     src/log10.c
+Copyright: 2012-2020 INRIA
+License:   LGPL-3.0+
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ option) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://logw.gnu.org/licenses/ .
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     doc/mpc.info
+Copyright: 2002-2022 INRIA
+License:   LGPL-3.0+
+ Permission is granted to copy, distribute and/or modify this
+ document under the terms of the GNU Free Documentation License,
+ Version 1.3 or any later version published by the Free Software
+ Foundation; with no Invariant Sections.  A copy of the license is
+ included in the section entitled “GNU Free Documentation License.”
+ INFO-DIR-SECTION GNU Packages
+ START-INFO-DIR-ENTRY
+ * mpc: (mpc)Multiple Precision Complex Library.
+ END-INFO-DIR-ENTRY
+ .
+ File: mpc.info,  Node: Top,  Next: Copying,  Up: (dir)
+ .
+ GNU MPC
+ *******
+ .
+ This manual documents how to install and use the GNU Multiple Precision
+ Complex Library, version 1.3.1
+ .
+ * Menu:
+ .
+ * Copying::                     GNU MPC Copying Conditions (LGPL).
+ * Introduction to GNU MPC::     Brief introduction to GNU MPC.
+ * Installing GNU MPC::          How to configure and compile the GNU MPC library.
+ * Reporting Bugs::              How to usefully report bugs.
+ * GNU MPC Basics::              What every GNU MPC user should know.
+ * Complex Functions::           Functions for arithmetic on complex numbers.
+ * Ball Arithmetic::             Types and functions for complex balls.
+ * References::
+ * Concept Index::
+ * Function Index::
+ * Type Index::
+ * GNU Free Documentation License::
+ .
+ File: mpc.info,  Node: Copying,  Next: Introduction to GNU MPC,  Prev: Top,  Up: Top
+ .
+ GNU MPC Copying Conditions
+ **************************
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ option) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this program.  If not, see
+ <http://www.gnu.org/licenses/>.
+ .
+ File: mpc.info,  Node: Introduction to GNU MPC,  Next: Installing GNU MPC,  Prev: Copying,  Up: Top
+ .
+ 1 Introduction to GNU MPC
+ *************************
+ .
+ GNU MPC is a portable library written in C for arbitrary precision
+ arithmetic on complex numbers providing correct rounding.  It implements
+ a multiprecision equivalent of the C99 standard.  It builds upon the GNU
+ MP and the GNU MPFR libraries.
+ .
+ 1.1 How to use this Manual
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     tests/pow_z.dat
+Copyright: 2012 INRIA
+License:   LGPL-3.0+
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ option) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ The line format respects the parameter order in function prototype as
+ follow:
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     tests/log.dat
+Copyright: 2008-2012 INRIA
+License:   LGPL-3.0+
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ option) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ See file sin.dat for the format description.
+ .
+ Special values, following ISO C99 standard, Annex G,
+ more precisely Section G.6.3.2 "The clog functions".
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     tools/bench/benchtime.h
+Copyright: 2014 INRIA - CNRS
+License:   LGPL-3.0+
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ option) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ compute the time to run accurately niter calls of the function for any number of inputs
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     configure.ac
+Copyright: 2008-2022 INRIA
+License:   LGPL-3.0+
+ This file is part of GNU MPC.
+ .
+ GNU MPC is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; either version 3 of the License, or (at your
+ option) any later version.
+ .
+ GNU MPC is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for
+ more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program. If not, see http://www.gnu.org/licenses/ .
+ .
+ -*- Autoconf -*-
+ Process this file with autoconf to produce a configure script.
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ Version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files:     NEWS
+Copyright: 2008-2022 INRIA
+License:   PERMISSIVE
+ Copying and distribution of this file, with or without modification,
+ are permitted in any medium without royalty provided the copyright
+ notice and this notice are preserved. This file is offered as-is,
+ without any warranty.
+
+Files:     README
+Copyright: 2003-2022 INRIA
+License:   PERMISSIVE
+ Copying and distribution of this file, with or without modification,
+ are permitted in any medium without royalty provided the copyright
+ notice and this notice are preserved. This file is offered as-is,
+ without any warranty.
+ .
+ GNU MPC is a complex floating-point library with exact rounding.
+ It is based on the GNU MPFR floating-point library (http://www.mpfr.org/),
+ which is itself based on the GNU MP library (http://gmplib.org/).
+ .
+ Installing GNU MPC
+
+Files:     INSTALL
+Copyright: 1994-2021 Free Software Foundation, Inc.
+License:   PERMISSIVE
+ Copying and distribution of this file, with or without modification,
+ are permitted in any medium without royalty provided the copyright
+ notice and this notice are preserved.  This file is offered as-is,
+ without warranty of any kind.
+ .
+ Basic Installation
+
+Files:     COPYING.LESSER
+Copyright: 2007 Free Software Foundation, Inc.
+License:   __HEADER___
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+ .
+ This version of the GNU Lesser General Public License incorporates
+ the terms and conditions of version 3 of the GNU General Public
+ License, supplemented by the additional permissions listed below.
+ .
+ 0. Additional Definitions.
+ .
+ As used herein, "this License" refers to version 3 of the GNU Lesser
+ General Public License, and the "GNU GPL" refers to version 3 of the GNU
+ General Public License.
+ .
+ "The Library" refers to a covered work governed by this License,
+ other than an Application or a Combined Work as defined below.
+ .
+ An "Application" is any work that makes use of an interface provided
+ by the Library, but which is not otherwise based on the Library.
+ Defining a subclass of a class defined by the Library is deemed a mode
+ of using an interface provided by the Library.
+ .
+ A "Combined Work" is a work produced by combining or linking an
+ Application with the Library.  The particular version of the Library
+ with which the Combined Work was made is also called the "Linked
+ Version".
+ .
+ The "Minimal Corresponding Source" for a Combined Work means the
+ Corresponding Source for the Combined Work, excluding any source code
+ for portions of the Combined Work that, considered in isolation, are
+ based on the Application, and not on the Linked Version.
+ .
+ The "Corresponding Application Code" for a Combined Work means the
+ object code and/or source code for the Application, including any data
+ and utility programs needed for reproducing the Combined Work from the
+ Application, but excluding the System Libraries of the Combined Work.
+ .
+ 1. Exception to Section 3 of the GNU GPL.
+ .
+ You may convey a covered work under sections 3 and 4 of this License
+ without being bound by section 3 of the GNU GPL.
+ .
+ 2. Conveying Modified Versions.
+ .
+ If you modify a copy of the Library, and, in your modifications, a
+ facility refers to a function or data to be supplied by an Application
+ that uses the facility (other than as an argument passed when the
+ facility is invoked), then you may convey a copy of the modified
+ version:
+ .
+ a) under this License, provided that you make a good faith effort to
+ ensure that, in the event an Application does not supply the
+ function or data, the facility still operates, and performs
+ whatever part of its purpose remains meaningful, or
+ .
+ b) under the GNU GPL, with none of the additional permissions of
+ this License applicable to that copy.
+ .
+ 3. Object Code Incorporating Material from Library Header Files.
+ .
+ The object code form of an Application may incorporate material from
+ a header file that is part of the Library.  You may convey such object
+ code under terms of your choice, provided that, if the incorporated
+ material is not limited to numerical parameters, data structure
+ layouts and accessors, or small macros, inline functions and templates
+ (ten or fewer lines in length), you do both of the following:
+ .
+ a) Give prominent notice with each copy of the object code that the
+ Library is used in it and that the Library and its use are
+ covered by this License.
+ .
+ b) Accompany the object code with a copy of the GNU GPL and this license
+ document.
+ .
+ 4. Combined Works.
+ .
+ You may convey a Combined Work under terms of your choice that,
+ taken together, effectively do not restrict modification of the
+ portions of the Library contained in the Combined Work and reverse
+ engineering for debugging such modifications, if you also do each of
+ the following:
+ .
+ a) Give prominent notice with each copy of the Combined Work that
+ the Library is used in it and that the Library and its use are
+ covered by this License.
+ .
+ b) Accompany the Combined Work with a copy of the GNU GPL and this license
+ document.
+ .
+ c) For a Combined Work that displays copyright notices during
+ execution, include the copyright notice for the Library among
+ these notices, as well as a reference directing the user to the
+ copies of the GNU GPL and this license document.
+ .
+ d) Do one of the following:
+ .
+ 0) Convey the Minimal Corresponding Source under the terms of this
+ License, and the Corresponding Application Code in a form
+ suitable for, and under terms that permit, the user to
+ recombine or relink the Application with a modified version of
+ the Linked Version to produce a modified Combined Work, in the
+ manner specified by section 6 of the GNU GPL for conveying
+ Corresponding Source.
+ .
+ 1) Use a suitable shared library mechanism for linking with the
+ Library.  A suitable mechanism is one that (a) uses at run time
+ a copy of the Library already present on the user's computer
+ system, and (b) will operate properly with a modified version
+ of the Library that is interface-compatible with the Linked
+ Version.
+ .
+ e) Provide Installation Information, but only if you would otherwise
+ be required to provide such information under section 6 of the
+ GNU GPL, and only to the extent that such information is
+ necessary to install and execute a modified version of the
+ Combined Work produced by recombining or relinking the
+ Application with a modified version of the Linked Version. (If
+ you use option 4d0, the Installation Information must accompany
+ the Minimal Corresponding Source and Corresponding Application
+ Code. If you use option 4d1, you must provide the Installation
+ Information in the manner specified by section 6 of the GNU GPL
+ for conveying Corresponding Source.)
+ .
+ 5. Combined Libraries.
+ .
+ You may place library facilities that are a work based on the
+ Library side by side in a single library together with other library
+ facilities that are not Applications and are not covered by this
+ License, and convey such a combined library under terms of your
+ choice, if you do both of the following:
+ .
+ a) Accompany the combined library with a copy of the same work based
+ on the Library, uncombined with any other library facilities,
+ conveyed under the terms of this License.
+ .
+ b) Give prominent notice with the combined library that part of it
+ is a work based on the Library, and explaining where to find the
+ accompanying uncombined form of the same work.
+ .
+ 6. Revised Versions of the GNU Lesser General Public License.
+ .
+ The Free Software Foundation may publish revised and/or new versions
+ of the GNU Lesser General Public License from time to time. Such new
+ versions will be similar in spirit to the present version, but may
+ differ in detail to address new problems or concerns.
+ .
+ Each version is given a distinguishing version number. If the
+ Library as you received it specifies that a certain numbered version
+ of the GNU Lesser General Public License "or any later version"
+ applies to it, you have the option of following the terms and
+ conditions either of that published version or of any later version
+ published by the Free Software Foundation. If the Library as you
+ received it does not specify a version number of the GNU Lesser
+ General Public License, you may choose any version of the GNU Lesser
+ General Public License ever published by the Free Software Foundation.
+ .
+ If the Library as you received it specifies that a proxy can decide
+ whether future versions of the GNU Lesser General Public License shall
+ apply, that proxy's public statement of acceptance of any version is
+ permanent authorization for you to choose that version for the
+ Library.
+
+Files:     doc/fdl-1.3.texi
+Copyright: __NO_COPYRIGHT__ in: doc/fdl-1.3.texi
+License:   __UNKNOWN__
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+Files:     build-aux/texinfo.tex
+Copyright: 1985-2021 Free Software Foundation, Inc.
+License:   GPL-3.0+ with unknown exception
+ This texinfo.tex file is free software: you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation, either version 3 of the
+ License, or (at your option) any later version.
+ .
+ This texinfo.tex file is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied warranty
+ of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ .
+ As a special exception, when this file is read by TeX when processing
+ a Texinfo source document, you may use the result without
+ restriction. This Exception is an additional permission under section 7
+ of the GNU General Public License, version 3 ("GPLv3").
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ Version 3 can be found in `/usr/share/common-licenses/GPL-3'.
+
+Files:     doc/mdate-sh
+Copyright: 1995-2021 Free Software Foundation, Inc.
+License:   GPL-2.0+ with autoconf exception
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2, or (at your option)
+ any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ .
+ As a special exception to the GNU General Public License, if you
+ distribute this file as part of a program that contains a
+ configuration script generated by Autoconf, you may include it under
+ the same distribution terms that you use for the rest of that program.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ Version 2 can be found in `/usr/share/common-licenses/GPL-2'.
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: COPYING.LESSER
+                    GNU LESSER GENERAL PUBLIC LICENSE
+                        Version 3, 29 June 2007
+ .
+  Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+  Everyone is permitted to copy and distribute verbatim copies
+  of this license document, but changing it is not allowed.
+ .
+ .
+   This version of the GNU Lesser General Public License incorporates
+ the terms and conditions of version 3 of the GNU General Public
+ License, supplemented by the additional permissions listed below.
+ .
+   0. Additional Definitions.
+ .
+   As used herein, "this License" refers to version 3 of the GNU Lesser
+ General Public License, and the "GNU GPL" refers to version 3 of the GNU
+ General Public License.
+ .
+   "The Library" refers to a covered work governed by this License,
+ other than an Application or a Combined Work as defined below.
+ .
+   An "Application" is any work that makes use of an interface provided
+ by the Library, but which is not otherwise based on the Library.
+ Defining a subclass of a class defined by the Library is deemed a mode
+ of using an interface provided by the Library.
+ .
+   A "Combined Work" is a work produced by combining or linking an
+ Application with the Library.  The particular version of the Library
+ with which the Combined Work was made is also called the "Linked
+ Version".
+ .
+   The "Minimal Corresponding Source" for a Combined Work means the
+ Corresponding Source for the Combined Work, excluding any source code
+ for portions of the Combined Work that, considered in isolation, are
+ based on the Application, and not on the Linked Version.
+ .
+   The "Corresponding Application Code" for a Combined Work means the
+ object code and/or source code for the Application, including any data
+ and utility programs needed for reproducing the Combined Work from the
+ Application, but excluding the System Libraries of the Combined Work.
+ .
+   1. Exception to Section 3 of the GNU GPL.
+ .
+   You may convey a covered work under sections 3 and 4 of this License
+ without being bound by section 3 of the GNU GPL.
+ .
+   2. Conveying Modified Versions.
+ .
+   If you modify a copy of the Library, and, in your modifications, a
+ facility refers to a function or data to be supplied by an Application
+ that uses the facility (other than as an argument passed when the
+ facility is invoked), then you may convey a copy of the modified
+ version:
+ .
+    a) under this License, provided that you make a good faith effort to
+    ensure that, in the event an Application does not supply the
+    function or data, the facility still operates, and performs
+    whatever part of its purpose remains meaningful, or
+ .
+    b) under the GNU GPL, with none of the additional permissions of
+    this License applicable to that copy.
+ .
+   3. Object Code Incorporating Material from Library Header Files.
+ .
+   The object code form of an Application may incorporate material from
+ a header file that is part of the Library.  You may convey such object
+ code under terms of your choice, provided that, if the incorporated
+ material is not limited to numerical parameters, data structure
+ layouts and accessors, or small macros, inline functions and templates
+ (ten or fewer lines in length), you do both of the following:
+ .
+    a) Give prominent notice with each copy of the object code that the
+    Library is used in it and that the Library and its use are
+    covered by this License.
+ .
+    b) Accompany the object code with a copy of the GNU GPL and this license
+    document.
+ .
+   4. Combined Works.
+ .
+   You may convey a Combined Work under terms of your choice that,
+ taken together, effectively do not restrict modification of the
+ portions of the Library contained in the Combined Work and reverse
+ engineering for debugging such modifications, if you also do each of
+ the following:
+ .
+    a) Give prominent notice with each copy of the Combined Work that
+    the Library is used in it and that the Library and its use are
+    covered by this License.
+ .
+    b) Accompany the Combined Work with a copy of the GNU GPL and this license
+    document.
+ .
+    c) For a Combined Work that displays copyright notices during
+    execution, include the copyright notice for the Library among
+    these notices, as well as a reference directing the user to the
+    copies of the GNU GPL and this license document.
+ .
+    d) Do one of the following:
+ .
+        0) Convey the Minimal Corresponding Source under the terms of this
+        License, and the Corresponding Application Code in a form
+        suitable for, and under terms that permit, the user to
+        recombine or relink the Application with a modified version of
+        the Linked Version to produce a modified Combined Work, in the
+        manner specified by section 6 of the GNU GPL for conveying
+        Corresponding Source.
+ .
+        1) Use a suitable shared library mechanism for linking with the
+        Library.  A suitable mechanism is one that (a) uses at run time
+        a copy of the Library already present on the user's computer
+        system, and (b) will operate properly with a modified version
+        of the Library that is interface-compatible with the Linked
+        Version.
+ .
+    e) Provide Installation Information, but only if you would otherwise
+    be required to provide such information under section 6 of the
+    GNU GPL, and only to the extent that such information is
+    necessary to install and execute a modified version of the
+    Combined Work produced by recombining or relinking the
+    Application with a modified version of the Linked Version. (If
+    you use option 4d0, the Installation Information must accompany
+    the Minimal Corresponding Source and Corresponding Application
+    Code. If you use option 4d1, you must provide the Installation
+    Information in the manner specified by section 6 of the GNU GPL
+    for conveying Corresponding Source.)
+ .
+   5. Combined Libraries.
+ .
+   You may place library facilities that are a work based on the
+ Library side by side in a single library together with other library
+ facilities that are not Applications and are not covered by this
+ License, and convey such a combined library under terms of your
+ choice, if you do both of the following:
+ .
+    a) Accompany the combined library with a copy of the same work based
+    on the Library, uncombined with any other library facilities,
+    conveyed under the terms of this License.
+ .
+    b) Give prominent notice with the combined library that part of it
+    is a work based on the Library, and explaining where to find the
+    accompanying uncombined form of the same work.
+ .
+   6. Revised Versions of the GNU Lesser General Public License.
+ .
+   The Free Software Foundation may publish revised and/or new versions
+ of the GNU Lesser General Public License from time to time. Such new
+ versions will be similar in spirit to the present version, but may
+ differ in detail to address new problems or concerns.
+ .
+   Each version is given a distinguishing version number. If the
+ Library as you received it specifies that a certain numbered version
+ of the GNU Lesser General Public License "or any later version"
+ applies to it, you have the option of following the terms and
+ conditions either of that published version or of any later version
+ published by the Free Software Foundation. If the Library as you
+ received it does not specify a version number of the GNU Lesser
+ General Public License, you may choose any version of the GNU Lesser
+ General Public License ever published by the Free Software Foundation.
+ .
+   If the Library as you received it specifies that a proxy can decide
+ whether future versions of the GNU Lesser General Public License shall
+ apply, that proxy's public statement of acceptance of any version is
+ permanent authorization for you to choose that version for the
+ Library.
